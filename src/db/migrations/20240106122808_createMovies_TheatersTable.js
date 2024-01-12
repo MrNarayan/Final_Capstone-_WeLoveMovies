@@ -7,7 +7,7 @@ exports.up = function(knex) {
       .inTable("theaters");
     table.integer("movie_id").unsigned().notNullable();
     table.foreign("movie_id").references("movie_id")
-      .inTable("Movies");
+      .inTable("movies");
   });
 };
 
